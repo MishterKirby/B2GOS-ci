@@ -1,6 +1,6 @@
 #!/bin/bash
 source b2g.env
-chmod +x $ANDROID_ROOT/B2G/kernel/oneplus/onyx/scripts/gcc-wrapper.py
+chmod +x $ANDROID_ROOT/B2G/kernel/motorola/osprey/scripts/gcc-wrapper.py
 chmod +x $ANDROID_ROOT/B2G//gecko/build/autoconf/config.guess
 chmod +x $ANDROID_ROOT/B2G//gecko/mach
 export SHELL=/bin/bash
@@ -14,7 +14,7 @@ export B2G_UPDATE_CHANNEL=default
 export MOZ_TELEMETRY_REPORTING=1
 export MOZ_CRASHREPORTER_NO_REPORT=1 
 export ENABLE_DEFAULT_BOOTANIMATION=true
-export DOGFOOD=0
+export DOGFOOD=1
 export VARIANT=eng
 export DEVICE_DEBUG=1
 export SCREEN_TIMEOUT=0
