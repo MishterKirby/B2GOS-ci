@@ -71,7 +71,7 @@ jobs:
         cd $ANDROID_ROOT/B2G
         ./config.sh osprey
 
-    - name: Mod source code
+    - name: Combine source code
       run: |
         source b2g.env
         cp /usr/bin/ld.gold   $ANDROID_ROOT/B2G/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.6/x86_64-linux/bin/ld 
