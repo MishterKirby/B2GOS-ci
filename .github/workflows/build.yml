@@ -75,7 +75,7 @@ jobs:
       run: |
         source b2g.env
         cp /usr/bin/ld.gold   $ANDROID_ROOT/B2G/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.6/x86_64-linux/bin/ld 
-        chmod +x $ANDROID_ROOT/B2G/kernel/oneplus/onyx/scripts/gcc-wrapper.py
+        chmod +x $ANDROID_ROOT/B2G/kernel/motorola/osprey/scripts/gcc-wrapper.py
         chmod +x $ANDROID_ROOT/B2G/gecko/build/autoconf/config.guess
         chmod +x $ANDROID_ROOT/B2G/gecko/mach
         export SHELL=/bin/bash
@@ -108,4 +108,4 @@ jobs:
       uses: actions/upload-artifact@master
       with:
         name: update.zip
-        path: /home/runner/work/b2g/B2G/out/target/product/onyx/fota/fullimg/update.zip
+        path: /home/runner/work/b2g/B2G/out/target/product/osprey/fota/fullimg/update.zip
