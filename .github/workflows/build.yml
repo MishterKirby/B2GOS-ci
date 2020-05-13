@@ -60,7 +60,8 @@ jobs:
         chmod +x ~/bin/repo
         git config --global user.name "Sebastian Rivera"
         git config --global user.email "MishterKirby@github.com"
-
+        sudo apt autoremove -y
+        sudo apt clean
 
     - name: Downloading source code
       run: |
@@ -70,7 +71,7 @@ jobs:
         git clone https://github.com/MishterKirby/B2G
         cd $ANDROID_ROOT/B2G
         ./config.sh osprey
-
+        sudo rm -rf /tmp
     - name: Combine source code
       run: |
         source b2g.env
