@@ -12,9 +12,9 @@ on:
 #  release:
 #    types: [published]
   schedule:
-    - cron:  0 8  1 * ?
-  watch:
-    types: [started]
+    - cron: 0 0 */1 * * *
+  #watch:
+    #types: [started]
 
 env:
   SSH_ACTIONS: false
