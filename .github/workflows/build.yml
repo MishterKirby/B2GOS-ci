@@ -12,7 +12,7 @@ on:
 #  release:
 #    types: [published]
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '* * * * *'
   #watch:
     #types: [started]
 
