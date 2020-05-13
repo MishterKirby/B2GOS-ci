@@ -3,7 +3,7 @@ This repository enables images to be built from GitHub Actions.
 
 ## B2G/FirefoxOS Building Status:  
  B2GOS v2.5 :
-![Build System Image](https://github.com/b2g2onyxL/B2GOS-ci/workflows/Build%20System%20Image/badge.svg?branch=master)  
+![Build System Image](https://github.com/MishterKirby/B2GOS-ci/workflows/Build%20System%20Image/badge.svg?branch=master)  
 [Download](https://github.com/b2g2onyxL/B2GOS-ci/actions)
 
 
