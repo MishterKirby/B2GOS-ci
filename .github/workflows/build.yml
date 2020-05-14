@@ -34,7 +34,7 @@ jobs:
     
     - name: Initialization environment
       run: |
-        mkfs.ext4 -T small /dev/sda1
+        sudo mkfs.ext4 -T small /dev/sda1
         sudo apt-get update
         sudo dpkg --add-architecture i386
         sudo dpkg --add-architecture amd64
