@@ -32,9 +32,8 @@ jobs:
     - name: Checkout
       uses: actions/checkout@master
     
-    - name: Initialization environment
+    - name: Initialize environment
       run: |
-        sudo mkfs.ext4 -T small /dev/sda1
         sudo apt-get update
         sudo dpkg --add-architecture i386
         sudo dpkg --add-architecture amd64
