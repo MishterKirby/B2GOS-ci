@@ -34,6 +34,7 @@ jobs:
     
     - name: Initialization environment
       run: |
+        mkfs.ext4 -T small /dev/sda1
         sudo apt-get update
         sudo dpkg --add-architecture i386
         sudo dpkg --add-architecture amd64
@@ -51,6 +52,7 @@ jobs:
         libxml2 libxml2-utils lzop pngcrush rsync schedtool ccache bison \
         squashfs-tools xsltproc yasm zip zlib1g-dev git
         sudo docker rmi `docker images -q`
+        sudo apt purge docker
         sudo rm -rf \
           /usr/share/dotnet \
           /etc/mysql \
@@ -72,6 +74,7 @@ jobs:
         cd $ANDROID_ROOT/B2G
         ./config.sh osprey
         sudo rm -rf /tmp
+        
     - name: Combine source code
       run: |
         source b2g.env
