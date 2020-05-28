@@ -12,7 +12,7 @@ on:
 #  release:
 #    types: [published]
   #schedule:
-  #  - cron: '* * * * *'
+    - cron: '* * * * *'
   #watch:
     #types: [started]
 
@@ -51,7 +51,7 @@ jobs:
         libxml2 libxml2-utils lzop pngcrush rsync schedtool ccache bison \
         squashfs-tools xsltproc yasm zip zlib1g-dev git
         sudo docker rmi `docker images -q`
-        sudo apt purge docker
+        sudo apt purge docker -y
         sudo rm -rf \
           /usr/share/dotnet \
           /etc/mysql \
