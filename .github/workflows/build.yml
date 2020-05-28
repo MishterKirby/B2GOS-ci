@@ -11,7 +11,7 @@ on:
 #      - master
 #  release:
 #    types: [published]
-  #schedule:
+  schedule:
     - cron: '* * * * *'
   #watch:
     #types: [started]
