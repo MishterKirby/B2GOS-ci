@@ -103,7 +103,7 @@ jobs:
         export MOZILLA_OFFICIAL=1
         export GAIA_DISTRIBUTION_DIR=distros/spark
         export GAIA_DEV_PIXELS_PER_PX=2.25
-        ./build.sh -j$(nproc) gecko-update-fota-fullimg
+        ./build.sh -j1 gecko-update-fota-fullimg
         
     - name : Upload update.zip
       uses: actions/upload-artifact@master
