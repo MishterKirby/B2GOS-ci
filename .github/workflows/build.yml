@@ -103,6 +103,7 @@ jobs:
         export MOZILLA_OFFICIAL=1
         export GAIA_DISTRIBUTION_DIR=distros/spark
         export GAIA_DEV_PIXELS_PER_PX=2.25
+        mkdir "out/target/product/osprey/obj/SHARED_LIBRARIES/libcryptfs_hw_intermediates/"
         touch "out/target/product/osprey/obj/SHARED_LIBRARIES/libcryptfs_hw_intermediates/export_includes"
         ./build.sh -j32 gecko-update-fota-fullimg
         
