@@ -1,4 +1,4 @@
-# B2G GH Actions
+# Boot2Gecko GitHub Actions
 This repository enables images to be built from GitHub Actions.
 
 ## B2G/FirefoxOS Building Status:  
@@ -8,35 +8,40 @@ This repository enables images to be built from GitHub Actions.
 
 
 
-### What working or Missing:  
+### What's working:  
 |              |   B2GOS v2.5          |   
 |:------------:|:------------:|
-| Ril |  OK   |
-| Sound | OK    | 
-| Touch | OK    | 
-| Wifi | OK    |
-| notification lights | OK    |
-| Vibration | OK    |
-| Orientation sensor | OK    |
-| Bluetooth | <h3>NO</h3>    | 
-| Flash light |  OK    | 
-| MTP  | OK  |
-| Light Sensor | OK    |
+| Ril |  Yes   |
+| Sound | Yes    | 
+| Touch | Yes    | 
+| Wifi | Yes    |
+| notification lights | Yes    |
+| Vibration | Yes    |
+| Orientation sensor | Yes    |
+| Flash light |  Yes    | 
+| MTP  | Yes  |
+| Light Sensor | Yes    |
 | Battery | OK    |
-| GPS | OK    | 
-| camera |  OK   |
-| Hotspot | Unknow    |
+| GPS | Yes    | 
+| camera |  Yes    |
+
+### What's not working:  
+|              |   B2GOS v2.5          |   
+|:------------:|:------------:|
+| Bluetooth | No | 
+| Hotspot | Unknown   |
+
 
 ### Pay attention! :  
-  1. B2GOS ROM REQUIRES OXYGENOS 2.1.3 FIRMWARE!
-  2. B2GOS is dead
+  1. B2GOS ROM *<b>requires</b>* OxygenOS 2.1.3 firmware.
+  2. B2GOS is not being mantained anymore
 
 ### Install:  
-   * Prerequisites: Unlocked bootloader , PC
-   * TWRP from Official Twrp site and flash it into your OneplusX
+   * Prerequisites: Unlocked bootloader, PC
+   * TWRP recovery flashed on your OnePlus X
    * Download B2GOS ROM from [here](https://github.com/b2g2onyxL/B2GOS-ci/actions)
-   * reboot your phone to TWRP and  wipe /data partitions and /system partitions
+   * Reboot your phone to TWRP and  wipe /data and /system partitions
    * Flash update.zip
-   * Enjoy  
-More detail about B2GOS can join our group on Telegram: [![@ServonkTelegram](https://img.shields.io/badge/telegram-@ServonkTelegram-yellow.svg)](http://huit.re/ServonkTelegram)
+   * Enjoy!
+More details about B2GOS in our Telegram group: [![@ServonkTelegram](https://img.shields.io/badge/telegram-@ServonkTelegram-yellow.svg)](http://huit.re/ServonkTelegram)
 
