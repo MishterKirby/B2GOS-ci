@@ -69,7 +69,7 @@ jobs:
         source b2g.env
         mkdir -p $ANDROID_ROOT
         cd $ANDROID_ROOT
-           git clone https://github.com/MishterKirby/B2G --depth 1 -b b2g/cm-12.1
+           git clone https://github.com/MishterKirby/B2G --depth 1 -b cm-12.1
         cd $ANDROID_ROOT/B2G
         ./config.sh osprey
     - name: Combine source code
